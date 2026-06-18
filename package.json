@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "serve": "^14.2.6"
+  },
+  "dependencies": {
+    "three": "^0.184.0"
   }
 }
