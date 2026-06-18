@@ -1,0 +1,12 @@
+{
+  "name": "ouroboroslogo",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx serve . --listen 3000",
+    "start": "npx serve . --listen 3000",
+    "build": "echo 'static site, no build step'"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}

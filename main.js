@@ -70,6 +70,10 @@ class ParticlesLogo {
 		this.renderer.setSize(this.width, this.height);
 		this.camera.aspect = this.width / this.height;
 		this.camera.updateProjectionMatrix();
+		if (this.particlesMaterial) {
+			this.particlesMaterial.uniforms.screenWidth.value = this.width;
+			this.particlesMaterial.uniforms.screenHeight.value = this.height;
+		}
 	};
 
 	addLogo () {
@@ -114,7 +118,7 @@ class ParticlesLogo {
 
 	onClick() {
 		document.addEventListener('click', () => {
-			this.particlesMaterial.uniforms.uTime.value = 0;
+			this.particlesMaterial.uniforms.uTime.value = 0.01;
 		});
 	};
 
