@@ -1,15 +1,14 @@
 {
   "name": "ouroboroslogo",
   "version": "1.0.0",
+  "type": "module",
+  "main": "index.html",
   "scripts": {
-    "dev": "npx serve . --listen 3000",
-    "start": "npx serve . --listen 3000",
+    "dev": "npx serve@14 . --listen 3000 --no-clipboard",
+    "start": "npx serve@14 . --listen 3000 --no-clipboard",
     "build": "echo 'static site, no build step'"
   },
   "devDependencies": {
     "serve": "^14.2.6"
-  },
-  "dependencies": {
-    "three": "^0.184.0"
   }
 }
